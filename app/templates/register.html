@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+<!-- {% extends "base.html" %}
 
 {% block content %}
     <h1>Register</h1>
@@ -34,4 +34,12 @@
         </p>
         <p>{{ form.submit() }}</p>
     </form>
+{% endblock %} -->
+
+{% extends "base.html" %}
+{% import "bootstrap_wtf.html" as wtf %}
+
+{% block content %}
+    <h1>Register</h1>
+    {{ wtf.quick_form(form) }}
 {% endblock %}
